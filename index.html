@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+        <div class="page-title">
+            <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+        </div>
+
+        <div class="game-container">
+            <!-- Set class to scores to display-->
+            <div class="hide" id="scores-id">
+                <span class="player-score">Player Score: 0</span>
+                <span class="computer-score">Computer Score: 0</span>
+            </div>
+
+            <!-- Set class to choose-your-weapon to display -->
+            <h2 class="hide" id="choose-your-weapon-id">Choose Your Weapon</h2>
+            <div class="weapons" id="weapons-id">
+                <span class="rock">🪨</span>
+                <span class="paper">📄</span>
+                <span class="scissors">✂️</span>
+                <span class="lizard">🦎</span>
+                <span class="spock">🖖</span>
+            </div>
+
+            <!-- Set class to choices to display-->
+            <div class="hide" id="choices-id">
+                <span class="user-choice" id="user-choice-id"></span>
+                <span class="computer-choice" id="computer-choice-id"></span>
+            </div>
+         </div>
+
+        <div class="start-menu">
+            <button class="rules-button" id="rules-button-id">Rules</button>
+            <button class="start-button" id="start-button-id">Start</button>
+            <button class="hide" id="play-button-id">Play</button>
+            <button class="hide" id="next-round-button-id">Next Round</button>
+            <button class="hide" id="play-again-button-id">Play Again</button>
+        </div>
+
+    </div>
+
+<!-- Begin Modal For Game Instructions-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <p><strong>First Player to Reach 5 Points Wins!</strong></p>
+            - Scissors cuts Paper<br>
+            - Paper covers Rock<br>
+            - Rock crushes Lizard<br>
+            - Lizard poisons Spock<br>
+            - Spock smashes Scissors<br>
+            - Scissors decapitates Lizard<br>
+            - Lizard eats Paper<br>
+            - Paper disproves Spock<br>
+            - Spock vaporizes Rock<br>
+            - Rock crushes Scissors
+        </div>
+      
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

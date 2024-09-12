@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f3f7;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width:80%;
+    margin: 0 auto
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: rgb(94, 93, 93);
+}
+
+.scores {
+    width: 100%;
+    font-weight:600;
+    font-size: 20px;
+    color: green;
+}
+
+.player-score{
+    display: inline-block;
+    width:48%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.computer-score{
+    display: inline-block;
+    width:48%;
+    text-align: right;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+.game-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.weapons{
+    font-size: 9em;
+    margin-top: 80px;
+}
+
+.chocies{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.user-choice, .computer-choice {
+    font-size: 16em;
+    margin:0 auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.computer-choice{
+    margin-left: 20px;
+}
+
+.start-menu{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    margin: 20px;
+}
+
+.start-button,
+.rules-button,
+.play-button,
+.next-round-button,
+.play-again {
+    width: 300px;
+    font-size: 3em;
+    border-radius: 15px;
+}
+
+.start-button{
+    background-color: #00bf63;
+    color: #fff; 
+}
+
+.rules-button {
+    background-color: #8c52ff;
+    color: #fff;
+}
+
+.play-button{
+    background-color: #130fea;
+    color: #fff;
+}
+
+.play-again{
+    background-color:  #00bf63;
+    color: #fff;
+}
+
+.next-round-button{
+    background-color: #ea9a0f;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.win-border{
+    border: 10px solid green;
+}
+
+.lose-border{
+    border: 10px solid red;
+}
+
+.select-border{
+    border: 5px solid gray;
+}
+
+/* Begine Modal for Game Instructions */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 35%;
+    top: 15%;
+    width: 30%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #6c28f5;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #6c28f5;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 70%; /* Could be more or less, depending on screen size */
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
